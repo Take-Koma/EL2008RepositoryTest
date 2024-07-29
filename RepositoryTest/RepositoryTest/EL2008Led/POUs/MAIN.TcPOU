@@ -3,11 +3,10 @@
   <POU Name="MAIN" Id="{4224c9ea-319d-4468-8ed0-878cb34713a5}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
-	eLedColor		:E_Color;
-	bLed1			:ARRAY[E_Color.eRed..E_Color.eWhite] OF BOOL;
-	bLed2			:ARRAY[E_Color.eRed..E_Color.eWhite] OF BOOL;
-	
-	i				:INT;
+	eLedColor				:E_Color;
+	i						:INT;
+	bLed1			AT %Q*	:ARRAY[E_Color.eRed..E_Color.eWhite] OF BOOL;
+	bLed2			AT %Q*	:ARRAY[E_Color.eRed..E_Color.eWhite] OF BOOL;
 END_VAR
 ]]></Declaration>
     <Implementation>
