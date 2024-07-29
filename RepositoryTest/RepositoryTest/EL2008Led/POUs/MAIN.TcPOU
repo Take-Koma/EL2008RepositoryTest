@@ -1,13 +1,41 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1">
-  <POU Name="MAIN" Id="{4224c9ea-319d-4468-8ed0-878cb34713a5}">
+  <POU Name="MAIN" Id="{4224c9ea-319d-4468-8ed0-878cb34713a5}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
+	eLedColor		:E_Color;
+	bLed1			:ARRAY[E_Color.eRed..E_Color.eWhite] OF BOOL;
+	bLed2			:ARRAY[E_Color.eRed..E_Color.eWhite] OF BOOL;
+	
+	i				:INT;
 END_VAR
-]]>
-    </Declaration>
+]]></Declaration>
     <Implementation>
-      <ST><![CDATA[]]></ST>
+      <ST><![CDATA[i:=i+1;
+
+IF i=10 THEN
+	bLed1[E_Color.eRed]:=TRUE;
+ELSIF i=20 THEN
+	bLed1[E_Color.eYellow]:=TRUE;
+ELSIF i=30 THEN
+	bLed1[E_Color.eGreen]:=TRUE;
+ELSIF i=40 THEN
+	bLed1[E_Color.eWhite]:=TRUE;
+ELSIF i=50 THEN
+	bLed2[E_Color.eRed]:=TRUE;
+ELSIF i=60 THEN
+	bLed2[E_Color.eYellow]:=TRUE;
+ELSIF i=70 THEN
+	bLed2[E_Color.eGreen]:=TRUE;
+ELSIF i=80 THEN
+	bLed2[E_Color.eWhite]:=TRUE;
+ELSIF i=100 THEN
+	FOR eLedColor:= E_Color.eRed TO E_Color.eWhite DO
+		bLed1[eLedColor]:=FALSE;
+		bLed2[eLedColor]:=FALSE;
+	END_FOR
+END_IF
+]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
