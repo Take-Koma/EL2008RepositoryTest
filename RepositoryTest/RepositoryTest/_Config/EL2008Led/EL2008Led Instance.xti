@@ -18,4 +18,28 @@
 			<TaskPouOid Prio="20" OTCID="#x08502001"/>
 		</TaskPouOids>
 	</Instance>
+	<Mappings>
+		<OwnerA>
+			<OwnerB Name="TIID^Device 2 (EtherCAT)^Term 1 (EK1100)^Term 3 (EL2008)">
+				<Link VarA="PlcTask Outputs^MAIN.bLed1[0]" VarB="Channel 1^Output" Size="1"/>
+				<Link VarA="PlcTask Outputs^MAIN.bLed1[1]" VarB="Channel 3^Output" Size="1"/>
+				<Link VarA="PlcTask Outputs^MAIN.bLed1[2]" VarB="Channel 5^Output" Size="1"/>
+				<Link VarA="PlcTask Outputs^MAIN.bLed1[3]" VarB="Channel 7^Output" Size="1"/>
+				<Link VarA="PlcTask Outputs^MAIN.bLed2[0]" VarB="Channel 2^Output" Size="1"/>
+				<Link VarA="PlcTask Outputs^MAIN.bLed2[1]" VarB="Channel 4^Output" Size="1"/>
+				<Link VarA="PlcTask Outputs^MAIN.bLed2[2]" VarB="Channel 6^Output" Size="1"/>
+				<Link VarA="PlcTask Outputs^MAIN.bLed2[3]" VarB="Channel 8^Output" Size="1"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 2 (EtherCAT)^Term 1 (EK1100)^Term 4 (EL2008)">
+				<Link VarA="PlcTask Outputs^MAIN.bLed1[0]" VarB="Channel 1^Output" Size="1"/>
+				<Link VarA="PlcTask Outputs^MAIN.bLed1[1]" VarB="Channel 3^Output" Size="1"/>
+				<Link VarA="PlcTask Outputs^MAIN.bLed1[2]" VarB="Channel 5^Output" Size="1"/>
+				<Link VarA="PlcTask Outputs^MAIN.bLed1[3]" VarB="Channel 7^Output" Size="1"/>
+				<Link VarA="PlcTask Outputs^MAIN.bLed2[0]" VarB="Channel 2^Output" Size="1"/>
+				<Link VarA="PlcTask Outputs^MAIN.bLed2[1]" VarB="Channel 4^Output" Size="1"/>
+				<Link VarA="PlcTask Outputs^MAIN.bLed2[2]" VarB="Channel 6^Output" Size="1"/>
+				<Link VarA="PlcTask Outputs^MAIN.bLed2[3]" VarB="Channel 8^Output" Size="1"/>
+			</OwnerB>
+		</OwnerA>
+	</Mappings>
 </TcSmItem>

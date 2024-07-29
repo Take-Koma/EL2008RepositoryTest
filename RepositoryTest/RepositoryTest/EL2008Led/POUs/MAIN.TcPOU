@@ -33,6 +33,7 @@ ELSIF i=100 THEN
 		bLed1[eLedColor]:=FALSE;
 		bLed2[eLedColor]:=FALSE;
 	END_FOR
+	i:=0;
 END_IF
 ]]></ST>
     </Implementation>
