@@ -7,6 +7,10 @@ VAR
 	i						:INT;
 	bLed1			AT %Q*	:ARRAY[E_Color.eRed..E_Color.eWhite] OF BOOL;
 	bLed2			AT %Q*	:ARRAY[E_Color.eRed..E_Color.eWhite] OF BOOL;
+	
+	lrTempT			AT %I*  :LREAL;
+	lrTempK			AT %I*	:LREAL;
+	
 END_VAR
 ]]></Declaration>
     <Implementation>
