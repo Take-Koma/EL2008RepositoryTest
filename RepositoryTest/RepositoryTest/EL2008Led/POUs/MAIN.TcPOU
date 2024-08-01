@@ -11,6 +11,7 @@ VAR
 	lrTempT			AT %I*  :LREAL;
 	lrTempK			AT %I*	:LREAL;
 	
+	
 END_VAR
 ]]></Declaration>
     <Implementation>
